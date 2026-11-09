@@ -1,511 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>GunarajDev.</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunaraj Khatri — Software Engineer</title>
+  <meta name="description" content="Gunaraj Khatri is a software engineer in Kathmandu who builds full-stack web apps, backend services in Go and Node.js, and AI projects." />
+  <meta name="author" content="Gunaraj Khatri" />
 
-  <!-- Favicons -->
-  <!-- <link href="img/favicon.png" rel="icon"> -->
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gunaraj Khatri — Software Engineer" />
+  <meta property="og:description" content="Full-stack web apps, backend services in Go and Node.js, and AI projects." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0a0e14" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gunaraj Khatri",
+    "jobTitle": "Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Rara Labs" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Pulchowk Campus, Tribhuvan University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "NP" },
+    "sameAs": [
+      "https://github.com/GunarajKhatri",
+      "https://linkedin.com/in/gunaraj-khatri-775045199"
+    ]
+  }
+  </script>
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body id="page-top">
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo" aria-label="Home"><span class="prompt">~/</span>gunaraj</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"><i>01</i>about</a></li>
+        <li><a href="#stack"><i>02</i>stack</a></li>
+        <li><a href="#work"><i>03</i>projects</a></li>
+        <li><a href="#journey"><i>04</i>journey</a></li>
+        <li><a href="#contact"><i>05</i>contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">GunarajDev.</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span>Backend Engineer at Rara Labs · Kathmandu</p>
+        <h1>Gunaraj Khatri<span class="caret">_</span></h1>
+        <p class="tagline">Software Engineer</p>
+        <p class="lead">
+          I build software end to end: <strong>APIs and services</strong> in Go, Node.js and Laravel,
+          <strong>interfaces</strong> in React, Next.js and Vue, and the occasional
+          <strong>neural network</strong> when a problem calls for one.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="socials" aria-label="Profiles">
+          <li><a href="https://github.com/GunarajKhatri" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+          <li><a href="https://linkedin.com/in/gunaraj-khatri-775045199" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
+          <li><a href="mailto:khatriroshan54@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg></a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/post-3.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am Gunaraj Khatri</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Tech Ethusiast,Aspiring Tech Entreprenuer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+      <div class="terminal" aria-label="Terminal summary">
+        <div class="term-bar"><span></span><span></span><span></span><em>gunaraj@pulchowk: ~</em></div>
+        <pre class="term-body" id="term"><code><span class="l"><b>$</b> whoami</span>
+<span class="l o">gunaraj khatri · software engineer</span>
+<span class="l"><b>$</b> cat now.txt</span>
+<span class="l o">backend @ rara labs — go, grpc, postgres</span>
+<span class="l"><b>$</b> ls ~/projects</span>
+<span class="l o">ecommerce-api  realtime-chat  deepfake-detection
+drl-sdn-loadbalancer  invoice-system  ...</span>
+<span class="l"><b>$</b> <span class="cursor"></span></span></code></pre>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section container">
+      <h2 class="section-title reveal"><i>01.</i> about</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a software engineer from Nepal who enjoys owning a feature from the database
+            schema all the way to the pixels. I wrote my first Laravel apps back in 2018 and
+            haven't stopped building since.
+          </p>
+          <p>
+            I studied <strong>Electronics Engineering at Pulchowk Campus</strong>. Along the way I
+            shipped REST APIs, real-time chat systems and e-commerce platforms, and went deeper
+            into AI and networking: a ResNet + LSTM <strong>deepfake detector</strong> and a
+            <strong>deep-reinforcement-learning SDN load balancer</strong> for my final year project.
+          </p>
+          <p>
+            Now I'm a <strong>Backend Engineer at Rara Labs</strong>, building production services in
+            Go with gRPC and PostgreSQL. I like clear API contracts, sensible schemas, and code the
+            next person can pick up easily.
+          </p>
+        </div>
+        <ul class="facts reveal">
+          <li><strong>2018</strong><span>first line of code shipped</span></li>
+          <li><strong>6+</strong><span>public projects on GitHub</span></li>
+          <li><strong>B.E.</strong><span>Electronics, Pulchowk Campus</span></li>
+          <li><strong>KTM</strong><span>based in Kathmandu, Nepal</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section id="stack" class="section container">
+      <h2 class="section-title reveal"><i>02.</i> stack</h2>
+      <div class="stack-grid">
+        <div class="card reveal">
+          <h3><span>//</span> languages</h3>
+          <ul class="tags"><li>Go</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>Python</li><li>SQL</li><li>C / C++</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3><span>//</span> backend</h3>
+          <ul class="tags"><li>gRPC</li><li>Protobuf</li><li>Echo</li><li>Node.js</li><li>Express</li><li>Laravel</li><li>REST</li><li>WebSockets</li><li>JWT / RBAC</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3><span>//</span> frontend</h3>
+          <ul class="tags"><li>React</li><li>Next.js</li><li>Vue.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>HTML5 / CSS3</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3><span>//</span> databases</h3>
+          <ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>SQLite</li><li>Schema design</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3><span>//</span> tools &amp; infra</h3>
+          <ul class="tags"><li>Docker</li><li>Git / GitHub</li><li>CI/CD</li><li>Postman</li><li>Linux</li><li>Microservices</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3><span>//</span> ai &amp; networking</h3>
+          <ul class="tags"><li>PyTorch</li><li>CNN / LSTM</li><li>Deep RL</li><li>SDN / OpenFlow</li><li>Mininet</li></ul>
         </div>
       </div>
-    </div>
-  </div>
-  <!--/ Intro Skew End /-->
+    </section>
 
-  <section id="about" class="about-mf sect-pt4 route">
+    <!-- ================= PROJECTS ================= -->
+    <section id="work" class="section container">
+      <h2 class="section-title reveal"><i>03.</i> projects</h2>
+      <p class="section-sub reveal">A selection of things I've designed and built. Most are open source.</p>
+      <div class="work-grid">
+        <article class="project card reveal featured">
+          <header><span class="p-kind">ai · computer vision</span><span class="p-year">featured</span></header>
+          <h3>Deepfake Detection System</h3>
+          <p>A CNN-RNN hybrid (ResNet18 + LSTM) that detects manipulated videos frame by frame. It runs behind a Next.js frontend where you upload a video and get the analysis back.</p>
+          <ul class="tags small"><li>Python</li><li>PyTorch</li><li>ResNet18</li><li>LSTM</li><li>Next.js</li></ul>
+          <div class="p-links"><a href="https://github.com/GunarajKhatri/Deepfake-detection" target="_blank" rel="noopener">source ↗</a></div>
+        </article>
+        <article class="project card reveal featured">
+          <header><span class="p-kind">networking · research</span><span class="p-year">final year project</span></header>
+          <h3>DRL-Enabled SDN Load Balancer</h3>
+          <p>A software-defined network load balancer that uses deep reinforcement learning to route traffic adaptively, in real time, across changing topologies.</p>
+          <ul class="tags small"><li>Python</li><li>OpenFlow</li><li>Mininet</li><li>Deep RL</li></ul>
+          <div class="p-links"><a href="https://github.com/GunarajKhatri/DRL-SDN-LoadBalancer" target="_blank" rel="noopener">source ↗</a></div>
+        </article>
+        <article class="project card reveal">
+          <header><span class="p-kind">backend · api</span></header>
+          <h3>E-commerce REST API Services</h3>
+          <p>Secure, scalable REST APIs for products, users and orders, with JWT auth, role-based access control, middleware security and tuned MongoDB schemas.</p>
+          <ul class="tags small"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li></ul>
+          <div class="p-links"><a href="https://github.com/GunarajKhatri/ecommerce-api-services" target="_blank" rel="noopener">source ↗</a></div>
+        </article>
+        <article class="project card reveal">
+          <header><span class="p-kind">real-time</span></header>
+          <h3>Real-Time Chat System</h3>
+          <p>A multi-user chat app with two-way real-time messaging, online presence and secure channel authorization, built on Laravel WebSockets with a Vue.js frontend.</p>
+          <ul class="tags small"><li>Laravel</li><li>WebSockets</li><li>Vue.js</li><li>MySQL</li></ul>
+          <div class="p-links"><a href="https://github.com/GunarajKhatri/Real-Time-Chat-System-Using-Laravel-web-sockets-and-Vue.js" target="_blank" rel="noopener">source ↗</a></div>
+        </article>
+        <article class="project card reveal">
+          <header><span class="p-kind">full stack</span></header>
+          <h3>Invoice Management System</h3>
+          <p>An invoice and inventory platform with customer management, full CRUD and a normalized MySQL schema for fast queries.</p>
+          <ul class="tags small"><li>Next.js</li><li>TypeScript</li><li>MySQL</li><li>Tailwind</li></ul>
+          <div class="p-links"><a href="https://www.youtube.com/watch?v=qV0aS43EbL4" target="_blank" rel="noopener">demo video ↗</a></div>
+        </article>
+        <article class="project card reveal">
+          <header><span class="p-kind">full stack</span></header>
+          <h3>E-commerce Web App</h3>
+          <p>A full e-commerce platform with cart, checkout and an admin dashboard, using Laravel MVC and Eloquent with a reactive Vue.js single-page frontend.</p>
+          <ul class="tags small"><li>Laravel</li><li>Vue.js</li><li>MySQL</li><li>Bootstrap</li></ul>
+          <div class="p-links"><a href="https://github.com/GunarajKhatri/Ecommerce-using-Laravel-and-Vue.js" target="_blank" rel="noopener">source ↗</a></div>
+        </article>
+      </div>
+      <p class="more reveal"><a href="https://github.com/GunarajKhatri" target="_blank" rel="noopener">more on GitHub →</a></p>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section id="journey" class="section container">
+      <h2 class="section-title reveal"><i>04.</i> journey</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="tl-date">2026 — now</div>
+          <div class="tl-body">
+            <h3>Backend Engineer <span>· Rara Labs</span></h3>
+            <p>Building production backend services in Go: gRPC and REST APIs, PostgreSQL, Docker-based deployments and observability.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-date">2022 — 2026</div>
+          <div class="tl-body">
+            <h3>B.E. in Electronics <span>· Pulchowk Campus, Tribhuvan University</span></h3>
+            <p>Studied programming, algorithms and electronics at one of Nepal's top engineering colleges. My final year project was a DRL-enabled SDN load balancer.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-date">2020 — 2022</div>
+          <div class="tl-body">
+            <h3>+2 Science <span>· Vishwa Adarsha Secondary School, Itahari</span></h3>
+            <p>Kept building web projects on the side while studying science.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-date">2014 — 2020</div>
+          <div class="tl-body">
+            <h3>Secondary Education <span>· Unique Academy School, Jhumka, Sunsari</span></h3>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title reveal"><i>05.</i> contact</h2>
+      <div class="contact-box card reveal">
+        <h3>Let's build something together.</h3>
+        <p>Have a project, a role, or just a question about something I've built? Send me an email. I usually reply within a day or two.</p>
+        <a class="btn btn-primary" href="mailto:khatriroshan54@gmail.com">khatriroshan54@gmail.com</a>
+        <p class="copy-hint"><button class="copy-btn" data-copy="khatriroshan54@gmail.com">copy email</button></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="img/ros.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Gunaraj Khatri</span></p>
-                      <p><span class="title-s">Profile: </span> <span>Web developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>khatriroshan54@gmail.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>9825312795</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS</span> <span class="pull-right">60%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">70%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                   <span>Laravel</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    I am one of the <strong>Growing Laravel Based Web Developer</strong>.I can develop any kind of websites.I can create websites that can adjust easily according to screen sized.Additionally,I can develop user friendly web application like Ecommerce website,Content management system,blog etc.
-  <br><br>  
-I am <strong>Tech Ethusiastic guy.</strong>.I loves learning things like about various technologies.I prefer doing experimenting with technology.My first introduction with technology comes with learning programming languages.I am Big Dreamer who have great desire to do something in fields of information technology.My Role model is Bill gates and Steve Jobs.I inspire from them on longing for doing something great..
-<br>
-I believe in Innovation And Entreprenuership
-<br>
-
-<strong>Thank You To All</strong>.........
-                  </p>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p>© <span id="year">2026</span> Gunaraj Khatri</p>
+      <a href="#top">back to top ↑</a>
     </div>
-  </section>
+  </footer>
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
-            </h3>
-            <p class="subtitle-a">
-              Here are some of the services that i provide to clients 
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                I design various kind of website using technology like html,css,bootstrap and javascript..
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                I developed all kinds of website including blog,ecommerce,cms etc for clients which well UI combination..
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                i can develop user friendly and responsive web development of clients as i have well knowledge of responsivness of website..
-              </p>
-            </div>
-          </div>
-        </div>
-       
-      
-      </div>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
-
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">0</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">1</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">1</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">1</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-             These are my some of the works done in web development field.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <!-- <a href="img/gg.mp4" data-lightbox="gallery-mf"> -->
-              <div class="work-img">
-              <!--   <img src="img/work-1.jpg" alt="" class="img-fluid"> -->
-              <video controls width="320" height="240">
-                <source src="img/gg.mp4" type="video/mp4">
-              </video>
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Routine Maker WebApp</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Laravel</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-           
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <!-- <a href="img/work-2.jpg" data-lightbox="gallery-mf"> -->
-              <div class="work-img">
-               <video controls width="320" height="240">
-                 <source src="img/prr.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Employee Management</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Laravel</span> /<span class="w-date">1 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img" style="width:345px;height:245px;">
-                <img src="img/work-3.jpg" alt="" class="img-fluid" style="width:240;">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Comming Soon...</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"> Web Development</span> /....... <span class="w-date"></span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-        
-      </div>
-    </div>
-  </section>
-  
-
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="row">
-        
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Contact
-            </h3>
-            <p class="subtitle-a">
-              You can contact me via message here,
-            </p>
-            <div class="line-mf bg-black"></div>
-          </div>
-        </div>
-        </div>
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message Us
-                    </h5>
-                  </div>
-                  <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                              <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      You can contact me via given my below Email 
-                      or through phone number too...
-                      if You Need Website,Do not forget to 
-                      consult me Thank You..
-                     <br> Have a Good Luck !
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span>Jhumka,Itahari Nepal</li>
-                      
-                      <li><span class="ion-email"></span>khatriroshan54@gmail.com</li>
-                      <li><span class="ion-ios-telephone"></span>9825312795</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>Gunaraj</strong>. All Rights Reserved</p>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
